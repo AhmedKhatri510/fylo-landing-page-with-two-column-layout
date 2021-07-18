@@ -1,0 +1,32 @@
+
+
+/*
+here some mixin can be added, mixin are similar to functions 
+
+but they don't return any value
+
+we need to include it using keyword "@include"
+
+Eg: @mixin text_center {
+    text-align: center;
+}
+
+and include the above mixin using "@include text_center;" keyword.
+*/
+
+
+
+
+
+//this is extra part not relavent to this file. 
+/*
+there is extend as well but use when there is repeatation of code in more than 
+one element.
+
+%heading-1 {
+    color: white;
+    font-size: 20px;   
+}
+
+use the above extend using @extend %heading-1;
+*/

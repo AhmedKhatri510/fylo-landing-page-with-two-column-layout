@@ -1,0 +1,13 @@
+
+
+
+//Variable can be created of colors, padding, margin, border, box-shadows, etc.
+
+//variable are normally used when, suppose if variable is not used and 
+//you used a hsl color and you want to change it's hue value and you have
+//1000 lines of sass code, it will be convinient to go at every line where 
+//color is specified and replacing that hsl value ?
+
+//instead we can create a variable for that colour and use that variable where color 
+//is specified, by only changing variable value can change colour specified
+//in sass code.
