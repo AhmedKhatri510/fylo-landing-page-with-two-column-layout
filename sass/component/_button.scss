@@ -1,3 +1,15 @@
 
 
 //buttons of various type, colour, hover effect can be defined here.
+
+.submit-btn {
+    padding: .8rem 2rem;
+    border: none;
+    font-size: 8px;
+}
+
+.btn--accent-blue {
+    background-color: $color-accent-blue;
+    color: #fff;
+    border-radius: 3px;
+}

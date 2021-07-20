@@ -1,0 +1,107 @@
+/*
+here some functions can be added, sometimes there is repeatation of the code 
+at that time functions are useful
+
+functions return value.
+*/
+/*
+here some mixin can be added, mixin are similar to functions 
+
+but they don't return any value
+
+we need to include it using keyword "@include"
+
+Eg: @mixin text_center {
+    text-align: center;
+}
+
+and include the above mixin using "@include text_center;" keyword.
+*/
+/*
+there is extend as well but use when there is repeatation of code in more than 
+one element.
+
+%heading-1 {
+    color: white;
+    font-size: 20px;   
+}
+
+use the above extend using @extend %heading-1;
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+
+.heading-1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; }
+
+.submit-btn {
+  padding: .8rem 2rem;
+  border: none;
+  font-size: 8px; }
+
+.btn--accent-blue {
+  background-color: #3065f8;
+  color: #fff;
+  border-radius: 3px; }
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
+  padding: 3rem;
+  align-items: center;
+  color: #16161d;
+  grid-gap: 6rem;
+  height: 100vh; }
+  .header__nav {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, max-content); }
+  .header__logo {
+    height: 3rem; }
+  .header__main {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-gap: 5%;
+    align-self: start; }
+  .header__content {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(min-content, 3rem)) min-content;
+    grid-gap: 1rem;
+    align-content: center; }
+  .header__img {
+    width: 100%; }
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-gap: 2rem; }
+
+.email {
+  padding: 3px 6px; }
+  .email:focus {
+    outline: none; }
+
+.main-nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 2rem;
+  align-items: center; }
+  .main-nav__item {
+    display: inline-block; }
+  .main-nav__link {
+    text-decoration: none;
+    color: currentColor; }

@@ -1,3 +1,51 @@
 
-
 //Here basic setup like html, body, etc can be defined.
+
+// ### Primary
+
+// - Very Dark Blue: hsl(243, 87%, 12%)
+// - Desaturated Blue: hsl(238, 22%, 44%)
+
+// ### Accent
+
+// - Bright Blue: hsl(224, 93%, 58%)
+// - Moderate Cyan: hsl(170, 45%, 43%)
+
+// ### Neutral
+
+// - Light Grayish Blue: hsl(240, 75%, 98%)
+// - Light Gray: hsl(0, 0%, 75%)
+
+//primary color
+
+$color-primary-dark-blue: hsl(240, 12%, 10%);
+$color-primary-desaturated-blue:  hsl(238, 22%, 44%);
+
+//Accent 
+
+$color-accent-blue: hsl(224, 93%, 58%);
+$color-accent-cyan: hsl(170, 45%, 43%);
+
+//neutral
+
+$color-neutral-grey-blue: hsl(240, 75%, 98%);
+$color-neutral-grey: hsl(0, 0%, 75%);
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+

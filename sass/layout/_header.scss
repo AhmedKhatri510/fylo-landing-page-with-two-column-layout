@@ -1,0 +1,80 @@
+
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    padding: 3rem;
+    align-items: center;
+    color: $color-primary-dark-blue;
+    grid-gap: 6rem;
+
+    height: 100vh;
+    &__nav {
+        display: grid;
+        grid-template-columns: 1fr repeat(3, max-content);
+    }
+
+    &__logo {
+        height: 3rem;
+    }
+
+    &__main {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-gap: 5%;
+
+        align-self: start;
+    }
+
+    &__content {
+        
+        display: grid;
+        grid-template-rows:  repeat(2, minmax(min-content ,3rem)) min-content;
+        grid-gap: 1rem;
+        align-content: center;
+        // margin-top: 6rem;
+    }
+
+
+    &__img {
+        width: 100%;
+    }
+
+
+}
+
+.form {
+        //to be grid
+        display: grid;
+        grid-template-columns: repeat(2, min-content);
+        grid-gap: 2rem;
+}
+
+.email {
+    // border: none;
+    padding: 3px 6px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+.main-nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-gap: 2rem;
+    align-items: center;
+    &__item {
+        
+        display: inline-block;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: currentColor;
+    }
+}
