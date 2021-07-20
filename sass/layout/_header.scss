@@ -8,7 +8,7 @@
     align-items: center;
     color: $color-primary-dark-blue;
     grid-gap: 6rem;
-
+    justify-content: center;
     height: 100vh;
 
     @media only screen and (max-width: $bp-medium) {
