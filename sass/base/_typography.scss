@@ -2,7 +2,24 @@
 
 //typography of various heading, text can be defined here.
 
-.heading-1 {
+%heading {
     font-family: 'Raleway', sans-serif;
+}
+
+.heading-1 {
+    @extend %heading;
     font-weight: 700;
+}
+
+.heading-4 {
+    @extend %heading;
+    color: $color-primary-dark-blue;
+}
+
+.heading-5 {
+    @extend %heading;
+
+    &--light {
+        color: $color-neutral-grey;
+    }
 }

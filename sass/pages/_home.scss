@@ -1,3 +1,74 @@
 
 
 //different section of home can be added here
+
+.features {
+    background-image: url(../images/bg-curve-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-gap: 5%;
+    align-content: center;
+    justify-content: center;
+    height: 90vh;
+    padding: 3rem;
+
+    &__content {
+        //heading p p 
+        display: grid;
+        grid-template-rows: 3rem repeat(2, minmax(min-content, 4rem)) 3rem min-content;
+        justify-items: start;
+
+    }
+
+    &__img {
+
+        img {
+            width: 100%;
+        }
+
+    }
+}
+
+.review {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 19rem;
+    padding: 2rem;
+    display: grid;
+    grid-gap: 1rem;
+    position: relative;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: 15rem;
+    &::before {
+        content: "\201C";
+        font-size: 4rem;
+        color: $color-primary-dark-blue;
+        position: absolute;
+        left: 2rem;
+        top: 0;
+        font-family: sans-serif;
+    }
+
+    p {
+        
+    }
+
+    &__details {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-gap: 1rem;
+        align-items: center;
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+        }
+    }
+
+    &__detail {
+        display:grid;
+        grid-gap: 5px;
+    }
+}

@@ -10,6 +10,24 @@
 
 .btn--accent-blue {
     background-color: $color-accent-blue;
-    color: #fff;
+    color: rgb(49, 29, 29);
     border-radius: 3px;
 }
+
+.btn--accent-cyan {
+    color: $color-accent-cyan;
+    display: inline-block;
+    position: relative;
+
+}
+
+// .right__arrow {
+//     // width: 1.5rem;
+//     // height: 1.5rem;
+//     // // color: #fff;
+//     // // background-color: currentColor;
+//     // content: "\2192";
+//     // position: absolute;
+//     // top: 0;
+//     // right: 0;
+// }

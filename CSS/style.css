@@ -43,9 +43,17 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400; }
 
+.heading-1, .heading-4, .heading-5 {
+  font-family: 'Raleway', sans-serif; }
+
 .heading-1 {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700; }
+
+.heading-4 {
+  color: #16161d; }
+
+.heading-5--light {
+  color: #bfbfbf; }
 
 .submit-btn {
   padding: .8rem 2rem;
@@ -54,8 +62,13 @@ body {
 
 .btn--accent-blue {
   background-color: #3065f8;
-  color: #fff;
+  color: #311d1d;
   border-radius: 3px; }
+
+.btn--accent-cyan {
+  color: #3c9f8f;
+  display: inline-block;
+  position: relative; }
 
 .header {
   display: grid;
@@ -105,3 +118,52 @@ body {
   .main-nav__link {
     text-decoration: none;
     color: currentColor; }
+
+.features {
+  background-image: url(../images/bg-curve-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-gap: 5%;
+  align-content: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 3rem; }
+  .features__content {
+    display: grid;
+    grid-template-rows: 3rem repeat(2, minmax(min-content, 4rem)) 3rem min-content;
+    justify-items: start; }
+  .features__img img {
+    width: 100%; }
+
+.review {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 19rem;
+  padding: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  position: relative;
+  grid-template-rows: 1fr min-content;
+  grid-template-columns: 15rem; }
+  .review::before {
+    content: "\201C";
+    font-size: 4rem;
+    color: #16161d;
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    font-family: sans-serif; }
+  .review__details {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 1rem;
+    align-items: center; }
+    .review__details img {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%; }
+  .review__detail {
+    display: grid;
+    grid-gap: 5px; }
