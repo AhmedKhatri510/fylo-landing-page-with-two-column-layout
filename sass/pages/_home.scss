@@ -30,9 +30,12 @@
         grid-template-rows: 3rem repeat(2, minmax(min-content, 4rem)) 3rem min-content;
         justify-items: start;
 
+
         @media only screen and (max-width: $bp-medium) {
             justify-items: center;
             padding-bottom: 2rem;
+            grid-template-rows: 4.5rem repeat(2, minmax(min-content, 5rem)) 3rem min-content;
+
         }
 
     }
