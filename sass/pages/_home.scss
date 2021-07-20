@@ -34,7 +34,7 @@
         @media only screen and (max-width: $bp-medium) {
             justify-items: center;
             padding-bottom: 2rem;
-            grid-template-rows: 4.5rem repeat(2, minmax(min-content, 5rem)) 3rem min-content;
+            grid-template-rows: 4.5rem repeat(2, minmax(min-content, 5rem)) 4.5rem min-content;
 
         }
 
