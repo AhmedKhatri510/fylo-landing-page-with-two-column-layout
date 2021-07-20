@@ -11,6 +11,15 @@
     font-weight: 700;
 }
 
+.heading-2 {
+    @extend %heading;
+    font-weight: 700;
+
+    &--light {
+        color: $color-neutral-grey-blue;
+    }
+}
+
 .heading-4 {
     @extend %heading;
     color: $color-primary-dark-blue;

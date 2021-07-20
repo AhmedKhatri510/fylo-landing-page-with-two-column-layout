@@ -8,10 +8,22 @@
     font-size: 8px;
 }
 
-.btn--accent-blue {
+%btn--accent-blue {
     background-color: $color-accent-blue;
     color: rgb(49, 29, 29);
     border-radius: 3px;
+}
+
+.btn--accent-blue {
+    @extend %btn--accent-blue;
+    
+}
+
+.btn--accent-blue--light {
+    @extend %btn--accent-blue;
+    color: $color-neutral-grey-blue;
+
+    font-size: 1.4rem;
 }
 
 .btn--accent-cyan {

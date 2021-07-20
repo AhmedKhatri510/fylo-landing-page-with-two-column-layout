@@ -72,3 +72,21 @@
         grid-gap: 5px;
     }
 }
+
+.start {
+
+    background-color: $color-primary-desaturated-blue;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-gap: 10%;
+
+    color: $color-neutral-grey-blue;
+    padding: 3rem;
+    align-items: center;
+
+
+    &__content {
+        display: grid;
+        grid-gap: 1rem;
+    }
+}

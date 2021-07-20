@@ -1,1 +1,82 @@
 
+.footer {
+    background-color:hsl(240, 67%, 20%);
+    padding: 3rem;
+    display: grid;
+    grid-gap: 3rem;
+    color: #fff;
+    &__logo {
+        background-color: #fff;
+        -webkit-mask-image: url(../images/logo.svg);
+        -webkit-mask-size: cover;
+        display: inline-block;
+        width: 12rem;
+        height: 3.5rem;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+        align-items: center;
+        align-content: center;
+    }
+
+    &__contact {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        align-items: center;
+        grid-gap: 1rem;
+    }
+
+    &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: #fff;
+    }
+
+    &-nav {
+
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 1rem;
+        
+        &__item {
+            display: inline-block;
+        }
+
+        &__link:link,
+        &__link:visited {
+            color: #fff;
+            text-decoration: none;
+            transition: all .2s;
+        }
+
+        &__link:hover,
+        &__link:active {
+            color: $color-accent-blue;
+            
+        }
+    }
+
+    &-social__icon {
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        grid-gap: 2rem;
+
+        svg {
+            box-sizing: content-box;
+            border: 1px solid currentColor;
+            padding: 3px;
+            border-radius: 50%;
+            transition: all .2s;
+            cursor: pointer;
+        }
+
+        svg:hover {
+            fill: $color-accent-blue;
+            color: $color-accent-blue;
+        }
+    }
+}

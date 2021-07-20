@@ -49,12 +49,26 @@
         display: grid;
         grid-template-columns: repeat(2, min-content);
         grid-gap: 2rem;
+
+        &-start {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+
+            .submit-btn {
+                justify-self: start;
+            }
+        }
 }
 
 .email {
     // border: none;
     padding: 3px 6px;
-
+    &-start {
+        font-size: 1.4rem;
+        padding: 5px 8px;
+    }
+    
     &:focus {
         outline: none;
     }
