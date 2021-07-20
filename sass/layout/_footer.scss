@@ -20,6 +20,10 @@
         grid-gap: 3rem;
         align-items: center;
         align-content: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__contact {
@@ -41,6 +45,10 @@
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-gap: 1rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(2, 30%);
+        }
         
         &__item {
             display: inline-block;

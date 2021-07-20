@@ -31,6 +31,11 @@ $color-accent-cyan: hsl(170, 45%, 43%);
 $color-neutral-grey-blue: hsl(240, 75%, 98%);
 $color-neutral-grey: hsl(0, 0%, 75%);
 
+//breakpoints
+
+$bp-large: 900px; 
+$bp-medium: 700px;
+
 *,
 *::after,
 *::before {
@@ -40,7 +45,12 @@ $color-neutral-grey: hsl(0, 0%, 75%);
 }
 
 html {
-    font-size: 62.5%;
+
+    font-size: 80%;
+    @media only screen and (max-width: $bp-large) {
+        font-size: 70%;
+    }
+    
 }
 
 body {
