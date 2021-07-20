@@ -153,6 +153,9 @@ body {
   color: #16161d;
   grid-gap: 6rem;
   height: 100vh; }
+  @media only screen and (max-width: 700px) {
+    .header {
+      grid-gap: 3rem; } }
   .header__nav {
     display: grid;
     grid-template-columns: 1fr repeat(3, max-content); }
@@ -172,6 +175,9 @@ body {
     grid-template-rows: repeat(2, minmax(min-content, 3rem)) min-content;
     grid-gap: 1rem;
     align-content: center; }
+    @media only screen and (max-width: 700px) {
+      .header__content {
+        justify-items: center; } }
   .header__img {
     width: 100%; }
     @media only screen and (max-width: 700px) {
@@ -194,6 +200,10 @@ body {
       @media only screen and (max-width: 700px) {
         .form-start .submit-btn {
           justify-self: stretch; } }
+  @media only screen and (max-width: 700px) {
+    .form {
+      grid-template-columns: min-content;
+      grid-gap: 1rem; } }
 
 .email {
   padding: 3px 6px; }

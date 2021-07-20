@@ -10,6 +10,12 @@
     grid-gap: 6rem;
 
     height: 100vh;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-gap: 3rem;
+    }
+
+    
     &__nav {
         display: grid;
         grid-template-columns: 1fr repeat(3, max-content);
@@ -45,7 +51,9 @@
         grid-gap: 1rem;
         align-content: center;
         // margin-top: 6rem;
-
+        @media only screen and (max-width: $bp-medium) {
+            justify-items: center;
+        }
         
     }
 
@@ -81,6 +89,11 @@
                     justify-self: stretch;
                 }
             }
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: min-content;
+            grid-gap: 1rem;
         }
 }
 
